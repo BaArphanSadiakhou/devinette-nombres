@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de Devinette des Nombres</h1>
+        <p>Choisissez un niveau de difficulté :</p>
+        <select id="difficulty">
+            <option value="100">Facile (1-100)</option>
+            <option value="500">Moyen (1-500)</option>
+            <option value="1000">Difficile (1-1000)</option>
+        </select>
+        <p>Choisissez un thème :</p>
+        <select id="theme">
+            <option value="light">Clair</option>
+            <option value="dark">Sombre</option>
+        </select>
+        <button id="start">Démarrer le Jeu</button>
+        <p>Devine un nombre !</p>
+        <input type="number" id="guess" placeholder="Ton devinette" disabled>
+        <button id="submit" disabled>Soumettre</button>
+        <p id="message"></p>
+        <button id="restart" style="display:none;">Recommencer</button>
+        <p id="attempts"></p>
+        <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
